@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brewora — artisan coffee shakes, matcha blends, and seasonal fruit smoothies. Crafted fresh daily at our roastery café. Order online or visit us.">
+  <meta name="keywords" content="Brewora, coffee shakes, matcha latte, artisan café, specialty drinks, fruit smoothies">
+  <meta name="author" content="Brewora">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brewora | Artisan Coffee Shakes & Blends">
+  <meta property="og:description" content="Discover handcrafted coffee shakes, matcha, chocolate, and fruit blends — roasted in-house, shaken to perfection.">
+  <meta property="og:image" content="images/og-hero.webp">
+  <meta property="og:url" content="https://brewora.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brewora | Artisan Coffee Shakes">
+  <meta name="twitter:description" content="Handcrafted coffee shakes and seasonal blends, made fresh every day.">
+  <meta name="twitter:image" content="images/og-hero.webp">
+
+  <title>Brewora | Artisan Coffee Shakes & Seasonal Blends</title>
+
+  <link rel="canonical" href="https://brewora.com">
+  <link rel="icon" type="image/webp" href="images/favicon.webp" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/matcha.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Brewora — return to homepage">
+        <img src="images/logo.webp" alt=""  loading="eager" aria-hidden="true">
+        <span>Brewora</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary site navigation">
+        <ul>
+          <li><a href="#about">About Our Café</a></li>
+          <li><a href="#menu">Drink Menu</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#locations">Find a Location</a></li>
+          <li><button type="button" id="btn-order-nav" name="order-nav" class="nav-cta order-trigger">Order Your Drinks</button></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile site navigation" hidden>
+      <ul>
+        <li><a href="#about">About Our Café</a></li>
+        <li><a href="#menu">Drink Menu</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#locations">Find a Location</a></li>
+        <li><button type="button" id="btn-order-mobile" name="order-mobile" class="order-trigger order-trigger--mobile">Order Your Drinks</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO — F-pattern: headline left, visual right -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Small-batch roastery · Est. 2018</p>
+          <h1 id="hero-heading">Coffee Shakes Crafted With Soul &amp; Seasonal Flavor</h1>
+          <p class="hero-lead">
+            From bold espresso blends to vibrant matcha and fruit infusions — every shake is
+            hand-pulled, flash-chilled, and finished with ingredients sourced from local farms.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Our Drink Menu</a>
+            <a href="#about" class="btn btn-secondary">Learn About Our Story</a>
+          </div>
+          <ul class="hero-stats" aria-label="Café highlights">
+            <li><strong>12+</strong> signature shakes</li>
+            <li><strong>100%</strong> arabica beans</li>
+            <li><strong>Daily</strong> fresh ingredients</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-live="polite" aria-atomic="true">
+          <div class="cup-carousel">
+            <div class="cup-carousel__stage" role="region" aria-label="Best seller drinks showcase">
+              <p class="carousel-eyebrow">Best Seller</p>
+
+              <figure class="cup-item" data-drink="matcha" data-index="0">
+                <img src="images/MATCHA2.webp" alt="Matcha Frappé in a clear plastic cup with whipped cream and green drizzle" loading="eager">
+              </figure>
+
+              <figure class="cup-item" data-drink="mango" data-index="1">
+                <img src="images/MANGO2.webp" alt="Mango Frappé in a clear plastic cup with whipped cream and golden fruit topping" loading="lazy">
+              </figure>
+
+              <figure class="cup-item" data-drink="strawberry" data-index="2">
+                <img src="images/STRAWBERRY2.webp" alt="Strawberry Frappé in a clear plastic cup with pink swirls and whipped cream" loading="lazy">
+              </figure>
+
+              <figure class="cup-item" data-drink="choco" data-index="3">
+                <img src="images/CHOCO1.webp" alt="Choco Frappé in a clear plastic cup with cocoa drizzle and whipped cream" loading="lazy">
+              </figure>
+
+              <div class="flavor-dots" role="tablist" aria-label="Select shake flavor">
+                <button role="tab" aria-selected="true" data-index="0" class="dot active" aria-label="Matcha Frappé"><span class="sr-only">Matcha Frappé</span></button>
+                <button role="tab" aria-selected="false" data-index="1" class="dot" aria-label="Mango Frappé"><span class="sr-only">Mango Frappé</span></button>
+                <button role="tab" aria-selected="false" data-index="2" class="dot" aria-label="Strawberry Frappé"><span class="sr-only">Strawberry Frappé</span></button>
+                <button role="tab" aria-selected="false" data-index="3" class="dot" aria-label="Choco Frappé"><span class="sr-only">Choco Frappé</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT — F-pattern: left-aligned heading, text column -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="about-heading">About Our Café</h2>
+          <p class="section-subtitle">Where every pour tells a story of origin, craft, and community.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-text">
+            <h3>Rooted in the Roast, Shaken to Life</h3>
+            <p>
+              Brewora began as a single espresso cart on V. Goopio Street. Today we roast our own
+              beans in small batches, blending single-origin profiles with house-made syrups and
+              farm-fresh fruit to create shakes that honor both tradition and creativity.
+            </p>
+            <p>
+              Our baristas train for six weeks before pulling their first signature shake — because
+              temperature, texture, and timing matter as much as the ingredients themselves.
+            </p>
+            <a href="#process" class="text-link">See how we craft each shake →</a>
+          </article>
+
+          <aside class="about-aside" aria-label="Café values">
+            <ul class="value-list">
+              <li>
+                <h4>Ethically Sourced</h4>
+                <p>Direct-trade beans from Colombia, Ethiopia, and Guatemala.</p>
+              </li>
+              <li>
+                <h4>Zero Waste Goal</h4>
+                <p>Compostable cups and a cup-return program at every location.</p>
+              </li>
+              <li>
+                <h4>Community First</h4>
+                <p>10% of seasonal shake sales support local food banks.</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU — Cards -->
+    <section id="menu" class="section menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="menu-heading">Our Drink Menu</h2>
+          <p class="section-subtitle">Signature shakes, seasonal rotations, and classic espresso drinks.</p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-media">
+              <img src="images/Caramel%20Coffee%20Jelly%20Frapp%C3%A9.webp" alt="Caramel Coffee Jelly Frappé in a clear upright plastic cup" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Caramel Coffee Jelly Frappé</h3>
+              <p>Rich espresso and caramel layered with house-made coffee jelly and whipped cream.</p>
+              <p class="card-price">$7.50</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/matcha1.webp" alt="Matcha Frappé shake in a clear upright plastic cup with whipped cream" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Matcha Frappé</h3>
+              <p>Ceremonial matcha whisked with oat milk, honey, and a touch of vanilla.</p>
+              <p class="card-price">$7.00</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/choco2.webp" alt="Choco Frappé in a clear upright plastic cup with chocolate drizzle" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Choco Frappé</h3>
+              <p>72% dark chocolate, espresso, and house-made cocoa nib crunch.</p>
+              <p class="card-price">$7.25</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/strawberry1.webp" alt="Strawberry Frappé in a clear upright plastic cup with pink swirls" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Strawberry Frappé</h3>
+              <p>Local strawberries puréed with Madagascar vanilla and light cream.</p>
+              <p class="card-price">$6.75</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/mango1.webp" alt="Mango Frappé shake in a clear upright plastic cup with golden mango layers" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Mango Frappé</h3>
+              <p>Concord grape and Alphonso mango layered over coconut cream base.</p>
+              <p class="card-price">$7.50</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/Sakura%20Frapp%C3%A9.webp" alt="Sakura Frappé in a clear upright plastic cup with pink floral tones" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Sakura Frappé</h3>
+              <p>Delicate cherry blossom flavor blended with milk and a hint of strawberry sweetness.</p>
+              <p class="card-price">$7.75</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process" aria-labelledby="process-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="process-heading">Our Crafting Process</h2>
+          <p class="section-subtitle">Four steps from bean to the perfect shake.</p>
+        </header>
+
+        <ol class="process-steps">
+          <li>
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Roast</h3>
+            <p>Beans roasted in 12 kg batches for optimal flavor development.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Brew</h3>
+            <p>Cold brew steeped 18 hours for smooth, low-acid espresso base.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Blend</h3>
+            <p>Fresh ingredients folded in at precise temperatures.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Shake</h3>
+            <p>Flash-chilled and hand-shaken for a silky, aerated texture.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section id="locations" class="section locations" aria-labelledby="locations-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="locations-heading">Find a Location</h2>
+          <p class="section-subtitle">Visit us for the full Brewora experience.</p>
+        </header>
+
+        <div class="location-grid">
+          <address class="location-card">
+            <h3>Bogo City</h3>
+            <p>6010 V. Goopio Street<br>Brgy. Carbon, OR 97201</p>
+            <p>Mon–Fri 7am–8pm · Sat–Sun 8am–9pm</p>
+            <a href="tel:+15035550142" class="text-link">(+63) 946-966-2619</a>
+          </address>
+
+          <address class="location-card">
+            <h3>Carbon Market</h3>
+            <p>Metro Ave<br>Brgy. Gairan, OR 97209</p>
+            <p>Daily 8am–7pm</p>
+            <a href="tel:+15035550188" class="text-link">Call: (+63) 946-966-2619</a>
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Brewora — return to homepage">
+          <img src="images/logo.webp" alt="" class="logo-icon logo-icon--sm" loading="lazy" aria-hidden="true">
+          <span>Brewora</span>
+        </a>
+        <p>Artisan coffee shakes, roasted with care since 2018.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Explore</h2>
+        <ul>
+          <li><a href="#about">About Our Café</a></li>
+          <li><a href="#menu">Drink Menu</a></li>
+          <li><a href="#process">Our Crafting Process</a></li>
+          <li><a href="#locations">Café Locations</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Footer support links">
+        <h2 class="footer-heading">Support</h2>
+        <ul>
+          <li><button type="button" id="btn-order-footer" name="order-footer" class="order-trigger order-trigger--footer">Order Your Drinks</button></li>
+          <li><a href="mailto:hello@brewora.com">Contact Our Team</a></li>
+          <li><a href="#">Allergen Information</a></li>
+          <li><a href="#">Careers at Brewora</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h2 class="footer-heading">Connect</h2>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Follow Brewora on Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Follow Brewora on Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Subscribe to Brewora on YouTube">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Brewora. All rights reserved.</p>
+      <nav aria-label="Legal links">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Google Form order modal -->
+  <div id="order-modal" class="order-modal" hidden role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+    <div class="order-modal__backdrop" data-close-order aria-hidden="true"></div>
+    <div class="order-modal__panel">
+      <header class="order-modal__header">
+        <div class="order-modal__brand">
+          <img src="images/logo.webp" alt="" class="order-modal__logo" width="36" height="36" aria-hidden="true">
+          <h2 id="order-modal-title">Order Your Drinks</h2>
+        </div>
+        <button type="button" id="btn-order-close" name="order-close" class="order-modal__close" data-close-order aria-label="Close order form">&times;</button>
+      </header>
+      <div class="order-modal__body">
+        <iframe
+          id="order-form-frame"
+          title="Brewora shake order form"
+          src=""
+          width="640"
+          height="1966"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">Loading…</iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
