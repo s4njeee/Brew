@@ -99,7 +99,7 @@
   const orderModal = document.getElementById('order-modal');
   const orderFrame = document.getElementById('order-form-frame');
   const orderTriggers = document.querySelectorAll('.order-trigger');
-  const orderCloseTargets = document.querySelectorAll('[data-close-order]');
+  const closeBtn = document.getElementById('btn-order-close');
   let orderModalOpen = false;
 
   function openOrderModal() {
@@ -139,15 +139,15 @@
     });
   });
 
-  orderCloseTargets.forEach((el) => {
-    el.addEventListener('click', closeOrderModal);
-  });
+  if (closeBtn) {
+  closeBtn.addEventListener('click', closeOrderModal);
+}
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && orderModalOpen) {
-      closeOrderModal();
-    }
-  });
+  // document.addEventListener('keydown', (e) => {
+  //   if (e.key === 'Escape' && orderModalOpen) {
+  //     closeOrderModal();
+  //   }
+  // });
 
   /* ---- Scroll reveal ---- */
   function initScrollReveal() {

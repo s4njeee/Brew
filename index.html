@@ -43,10 +43,10 @@
 
       <nav class="main-nav" aria-label="Primary site navigation">
         <ul>
-          <li><a href="#about">About Our Café</a></li>
-          <li><a href="#menu">Drink Menu</a></li>
-          <li><a href="#process">Our Process</a></li>
-          <li><a href="#locations">Find a Location</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#locations">Location</a></li>
           <li><button type="button" id="btn-order-nav" name="order-nav" class="nav-cta order-trigger">Order Your Drinks</button></li>
         </ul>
       </nav>
@@ -59,7 +59,7 @@
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile site navigation" hidden>
       <ul>
         <li><a href="#about">About Our Café</a></li>
-        <li><a href="#menu">Drink Menu</a></li>
+        <li><a href="#menu">Menu</a></li>
         <li><a href="#process">Our Process</a></li>
         <li><a href="#locations">Find a Location</a></li>
         <li><button type="button" id="btn-order-mobile" name="order-mobile" class="order-trigger order-trigger--mobile">Order Your Drinks</button></li>
@@ -358,11 +358,11 @@
 
   <!-- Google Form order modal -->
   <div id="order-modal" class="order-modal" hidden role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
-    <div class="order-modal__backdrop" data-close-order aria-hidden="true"></div>
+    <div class="order-modal__backdrop" aria-hidden="true"></div>
     <div class="order-modal__panel">
       <header class="order-modal__header">
         <div class="order-modal__brand">
-          <img src="images/logo.webp" alt="" class="order-modal__logo" width="36" height="36" aria-hidden="true">
+          <img src="images/logo.webp" alt="" class="order-modal__logo" aria-hidden="true">
           <h2 id="order-modal-title">Order Your Drinks</h2>
         </div>
         <button type="button" id="btn-order-close" name="order-close" class="order-modal__close" data-close-order aria-label="Close order form">&times;</button>
